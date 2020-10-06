@@ -1,0 +1,54 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+body{
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  background-color: #FFFEFB;
+
+}
+header
+ {
+    background-color: #E7F3F1;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+h1 
+{
+    text-align: center;
+    font-size: 50px;
+    background-image: url(https://i.pinimg.com/564x/1f/0c/d1/1f0cd1d915e0e0dd9c8fa1ec733b24de.jpg);
+padding: 100px;
+text-shadow: 2px 2px white;
+}
+p
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+ul{
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    background-color:#a3a3a0;
+    text-align: center;
+    border-style: dotted;
+    border-width: 3px;
+    border-color: #E78D99;
+    color: white;
+}
+
+footer
+{
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/1f/0c/d1/1f0cd1d915e0e0dd9c8fa1ec733b24de.jpg);
+text-shadow: 2px 2px white; 
+}
+
+
+
+
