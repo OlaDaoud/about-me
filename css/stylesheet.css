@@ -49,6 +49,13 @@ footer
 text-shadow: 2px 2px white; 
 }
 
+#exp {
+    background-image: url(https://i.pinimg.com/564x/5e/ad/45/5ead4554bbed0ad397e74374a3afd57c.jpg);
+    border-style: initial;
+    border: width 5px ;
+    color: darkslategray;
+    font-weight: bold;
+}
 
 
 
