@@ -82,57 +82,63 @@ function activityQuestion(){
 }
 activityQuestion();
 
+function musicQuestion(){
 
-var music= prompt('Can I play any kind of music ?');
-var music2=music.toLowerCase();
-
-switch(music2)
-{
-case 'yes':
-  console.log('yes');
-  alert('Ohhh, I hope that was true, but the only music I can play is silence');
-  break;
-case 'y':
-  console.log('yes');
-  alert('Ohhh, I hope that was true, but the only music I can play is silence');
-  break;
-case 'no':
-  console.log('no');
-  alert(' You know me well ! but, as a good friend you have to be supportive ^^ ');
-  score++;
-  break;
-case 'n':
-  console.log('no');
-  alert('You know me well ! but, as a good friend you have to be supportive ^^ ');
-  score++;
-  break;
+  var music= prompt('Can I play any kind of music ?');
+  var music2=music.toLowerCase();
+  
+  switch(music2)
+  {
+  case 'yes':
+    console.log('yes');
+    alert('Ohhh, I hope that was true, but the only music I can play is silence');
+    break;
+  case 'y':
+    console.log('yes');
+    alert('Ohhh, I hope that was true, but the only music I can play is silence');
+    break;
+  case 'no':
+    console.log('no');
+    alert(' You know me well ! but, as a good friend you have to be supportive ^^ ');
+    score++;
+    break;
+  case 'n':
+    console.log('no');
+    alert('You know me well ! but, as a good friend you have to be supportive ^^ ');
+    score++;
+    break;
+  }
 }
+musicQuestion();
 
-var phone= prompt('is it true that My fav phone brand is Samsung ?');
-var phone2=phone.toLowerCase();
+function phoneQuestion(){
 
-switch(phone2)
-{
-case 'yes':
-  console.log('yes');
-  alert('WHAT?? delete my number before you hurt my dear HUAWEI !');
-  break;
-case 'y':
-  console.log('yes');
-  alert('WHAT?? delete my number before you hurt my dear HUAWEI !');
-  break;
-case 'no':
-  console.log('no');
-  alert(' Yaaas, My HUAWEI is happy to hear your voice anytime ');
-  score++;
-  break;
-case 'n':
-  console.log('no');
-  alert('Yaaas, My HUAWEI is happy to hear your voice anytime ');
-  score++;
-  break;
+  var phone= prompt('is it true that My fav phone brand is Samsung ?');
+  var phone2=phone.toLowerCase();
+  
+  switch(phone2)
+  {
+  case 'yes':
+    console.log('yes');
+    alert('WHAT?? delete my number before you hurt my dear HUAWEI !');
+    break;
+  case 'y':
+    console.log('yes');
+    alert('WHAT?? delete my number before you hurt my dear HUAWEI !');
+    break;
+  case 'no':
+    console.log('no');
+    alert(' Yaaas, My HUAWEI is happy to hear your voice anytime ');
+    score++;
+    break;
+  case 'n':
+    console.log('no');
+    alert('Yaaas, My HUAWEI is happy to hear your voice anytime ');
+    score++;
+    break;
+  }
 }
-
+phoneQuestion();
 
 
 // var i=0 ;
@@ -154,41 +160,50 @@ case 'n':
 //     break;
 //   }
 // }
-for (var i=0; i<4; i++){
-  var age= prompt('In which year I was born ?');
+function guessYear(){
 
-
-  if (age < 1996){
-    console.log('too high');
-    alert('too high , I am younger');
-  }else if (age > 1996){
-    console.log('too low');
-    alert(' too low, I am older ');
-
+  for (var i=0; i<4; i++){
+    var age= prompt('In which year I was born ?');
+  
+  
+    if (age < 1996){
+      console.log('too high');
+      alert('too high , I am younger');
+    }else if (age > 1996){
+      console.log('too low');
+      alert(' too low, I am older ');
+  
+    }
+    else{
+      alert ('correct answer'+ age);
+      score++;
+      break;
+    }
+  
   }
-  else{
-    alert ('correct answer'+ age);
-    score++;
-    break;
-  }
-
 }
+guessYear();
 
 var movies=['nemo','brave','up','frozen','lion king','inside out','big hero'];
-for( var i=0; i<6 ; i++){
-  var moviesq= prompt(' name one of my fav disney movies : ');
+function guessMovie(){
 
-  if (moviesq == ('nemo'||'brave'||'up'||'frozen'||'lion king'||'inside out'||'big hero')){
-    console.log('correct');
-    alert(' Niiceeeeee, when we will watch it together ? ');
-    score++;
-    break;
-  }
-  else{
-    console.log=('wrong');
-    alert(' Sorry, thats not my type ..');
+  for( var i=0; i<6 ; i++){
+    var moviesq= prompt(' name one of my fav disney movies : ');
+  
+    if (moviesq == ('nemo'||'brave'||'up'||'frozen'||'lion king'||'inside out'||'big hero')){
+      console.log('correct');
+      alert(' Niiceeeeee, when we will watch it together ? ');
+      score++;
+      break;
+    }
+    else{
+      console.log=('wrong');
+      alert(' Sorry, thats not my type ..');
+    }
   }
 }
+guessMovie();
+
 alert( 'those are my fav movies ' + movies);
 
 alert('Thank you'+' ' +username+' '+'your score is'+' '+score+' '+', even If you did\'nt answer everything correctly I am very blissed to have such a caring friend ! ');
